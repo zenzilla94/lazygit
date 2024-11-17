@@ -1,0 +1,8 @@
+customCommands:
+  - key: 'a'
+    command: 'git push codeberg main && git push github main'
+    context: 'commits'
+    prompts:
+    - type: 'confirm'
+      title: 'Push to remotes'
+      body: 'Are you sure you want to push to both Codeberg and GitHub?'
